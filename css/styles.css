@@ -85,7 +85,7 @@ a {
         border: none;
         font-size: 16px;
         font-weight: 700;
-        line-height: 30px;
+        line-height: 1.875;
         letter-spacing: 0.96px;
         border-radius: 4px;
         background: var(--blue);
@@ -97,15 +97,16 @@ a {
 
     .slogan-info-title{
 
+        font-size: 14px;
         color: var(--black);
         font-weight: 700;
         letter-spacing: 0.03em;
         text-transform: uppercase;
     }
     .slogan-info-text{
-
+        
         color: var(--grey);
-        line-height: 24px;
+        line-height: 1.7;
         letter-spacing: 0.03em;
     }
 
@@ -186,7 +187,7 @@ a {
         padding: 6px 22px;
         font-size: 16px;
         font-weight: 500;
-        line-height: 162.5%;
+        line-height: 1.625;
         letter-spacing: 0.03em;
     }
 
@@ -200,6 +201,7 @@ a {
 
 .project-title {
 
+    font-size: 18px;
     font-weight: 700;
     letter-spacing: 0.06em;
 
@@ -209,7 +211,7 @@ a {
 .project-text {
 
     color: var(--grey);
-    line-height: 24px;
+    line-height: 1.875;
     letter-spacing: 0.03em;
 }
 
@@ -218,12 +220,12 @@ a {
 
     .address {
         color: var(--white);
-        line-height: 115%;
+        line-height: 1.14;
         letter-spacing: 0.03em;
     }
     .contacts-footer{
-        color: var(--grey);
-        line-height: 16px;
+        color: rgba(255, 255, 255, 0.6);
+        line-height: 1.14;
         letter-spacing: 0.03em;
         font-style: normal;
 
