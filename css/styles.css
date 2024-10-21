@@ -18,6 +18,13 @@ body {
   font-weight: 400;
 }
 
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
 .header {
   height: 80px;
   display: flex;
@@ -271,10 +278,14 @@ a {
   padding-bottom: 30px;
 }
 
+.tab-list {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .buttons_pages {
   display: flex;
-  padding-top: 94px;
-  margin: 50px;
+  margin-bottom: 50px;
   justify-content: center;
   align-items: center;
   gap: 8px;
@@ -340,7 +351,6 @@ a {
 
 .project-list-element-text {
   padding: 20px;
-  margin: 5px;
 }
 .project-list-image {
   width: 100%;
