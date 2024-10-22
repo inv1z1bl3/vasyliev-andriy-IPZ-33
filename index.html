@@ -14,7 +14,7 @@
     <title>Web Studio</title>
   </head>
 
-  <body>
+  <body class="body">
     <header class="header">
       <div class="container">
         <a href="index.html"><img src="images/WebStudio.svg" alt="logo" /></a>
@@ -33,10 +33,18 @@
         </nav>
         <ul class="contacts-list">
           <li>
-            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <a class="contacts-list-header" href="mailto:info@devstudio.com">
+              <svg class="contacts-icon" width="16" height="12">
+                <use href="./images/svg/icons.svg#icon-envelope"></use></svg
+              >info@devstudio.com</a
+            >
           </li>
           <li>
-            <a href="tel:+380961111111">+38 096 111 11 11</a>
+            <a class="contacts-list-header" href="tel:+380961111111">
+              <svg class="contacts-icon" width="10" height="16">
+                <use href="./images/svg/icons.svg#icon-smartphone"></use></svg
+              >+38 096 111 11 11</a
+            >
           </li>
         </ul>
       </div>
@@ -54,6 +62,13 @@
         <div class="container">
           <ul class="sloganchiki-jr">
             <li class="sloganchiki-text">
+              <div class="sloganchiki-icon">
+                <svg class="icon" width="70" height="70">
+                  <use
+                    href="./images/svg/icons.svg#icon-attention-to-detail"
+                  ></use>
+                </svg>
+              </div>
               <h3 class="slogan-info-title">Увага до деталей</h3>
               <p class="slogan-info-text">
                 Ідейні міркування, і навіть початок повсякденної роботи з
@@ -61,6 +76,11 @@
               </p>
             </li>
             <li class="sloganchiki-text">
+              <div class="sloganchiki-icon">
+                <svg class="icon" width="70" height="70">
+                  <use href="./images/svg/icons.svg#icon-punctuality"></use>
+                </svg>
+              </div>
               <h3 class="slogan-info-title">Пунктуальність</h3>
               <p class="slogan-info-text">
                 Завдання організації, особливо рамки і місце навчання кадрів
@@ -68,12 +88,22 @@
               </p>
             </li>
             <li class="sloganchiki-text">
+              <div class="sloganchiki-icon">
+                <svg class="icon" width="70" height="70">
+                  <use href="./images/svg/icons.svg#icon-planning"></use>
+                </svg>
+              </div>
               <h3 class="slogan-info-title">Планування</h3>
               <p class="slogan-info-text">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
             <li class="sloganchiki-text">
+              <div class="sloganchiki-icon">
+                <svg class="icon" width="70" height="70">
+                  <use href="./images/svg/icons.svg#icon-technologies"></use>
+                </svg>
+              </div>
               <h3 class="slogan-info-title">Сучасні технології</h3>
               <p class="slogan-info-text">
                 Значимість цих проблем настільки очевидна, що реалізація
@@ -126,6 +156,19 @@
               <div class="member-div-text">
                 <h3 class="member-title">Ігор Дем'яненко</h3>
                 <p class="member-text">Product Designer</p>
+                <ul class="team-social-networks">
+                  <li>
+                    <a
+                      class="team-social-icons"
+                      href="https://www.instagram.com"
+                      rel="nofollow"
+                    >
+                      <svg width="20" height="20">
+                        <use href="./images/svg/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </li>
             <li class="team-profiles-jr">
