@@ -270,6 +270,11 @@ a {
   margin-top: 16px;
 }
 
+.team-social-networks li {
+  width: 44px;
+  height: 44px;
+}
+
 .team-social-icons {
   display: flex;
   justify-content: center;
@@ -280,6 +285,13 @@ a {
   color: var(--icon);
   fill: currentColor;
   transition: all 300ms ease-in-out;
+}
+
+a.team-social-icons:hover,
+a.team-social-icons:focus {
+  background-color: var(--blue);
+  color: var(--white);
+  outline: none;
 }
 
 .team-title {
@@ -324,6 +336,49 @@ a {
 
 .member-div-text {
   padding-bottom: 30px;
+}
+
+.clients {
+  text-align: center;
+  padding: 94px;
+  margin: 0;
+}
+.title-clients {
+  color: var(--black);
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  word-wrap: break-word;
+  margin-bottom: 50px;
+}
+
+.clients-list {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 30px;
+}
+
+.client a {
+  border-radius: 4px;
+  border: 1px var(--icon) solid;
+  display: inline-block;
+  color: var(--icon);
+  transition: color 0.5s, border 0.5s;
+}
+
+.client a:hover,
+.client a:focus {
+  color: var(--blue);
+  border: 1 px var(--blue) solid;
+}
+
+.clients-logo {
+  width: 100%;
+  height: 100%;
+  padding: 16px 32px;
+  fill: currentColor;
+  transition: fill 0.5s;
 }
 
 .tab-list {
@@ -442,6 +497,47 @@ a {
   letter-spacing: 0.03em;
   margin-bottom: 12px;
 }
+
+.footer-socials-text {
+  color: var(--white);
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.footer-socials-links {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 10px;
+}
+
+.footer-socials-links li {
+  height: 44px;
+  width: 44px;
+}
+
+.footer-socials-links-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.01);
+  width: 100%;
+  height: 100%;
+  color: var(--white);
+  fill: currentColor;
+  transition: color 0.5s, background-color 0.5s;
+}
+
+.footer-socials-links-icons:hover,
+.footer-socials-links-icons:focus {
+  color: var(--white);
+  fill: currentColor;
+  background-color: var(--blue_light);
+}
+
 .contacts-footer {
   color: rgba(255, 255, 255, 0.6);
   line-height: 1.14;
