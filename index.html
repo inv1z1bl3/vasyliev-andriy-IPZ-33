@@ -20,7 +20,7 @@
         <a href="index.html"><img src="images/WebStudio.svg" alt="logo" /></a>
         <nav>
           <ul class="pages-list">
-            <li class="pages-list-jr">
+            <li class="pages-list-jr-active">
               <a href="index.html">Студія</a>
             </li>
             <li class="pages-list-jr">
@@ -56,7 +56,7 @@
       <section class="slogan">
         <div class="container">
           <h1 class="slogan-title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="slogan-button">Замовити послугу</button>
+          <button type="button" class="slogan-button" data-modal-open>Замовити послугу</button>
         </div>
       </section>
 
@@ -122,6 +122,9 @@
           <ul class="work-images">
             <li class="work-images-jr">
               <img src="images/1.jpg" alt="дизайн" width="370" height="294" />
+              <div class="work-images-text">
+                <p>Десктопні додатки</p>
+              </div>
             </li>
             <li class="work-images-jr">
               <img
@@ -130,6 +133,9 @@
                 width="370"
                 height="294"
               />
+              <div class="work-images-text">
+                <p>Мобільні додатки</p>
+              </div>
             </li>
             <li class="work-images-jr">
               <img
@@ -138,6 +144,9 @@
                 width="370"
                 height="294"
               />
+              <div class="work-images-text">
+                <p>Дизайнерські рішення</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -509,5 +518,12 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal_button" data-modal-close>
+          <svg class="modal_icon"><use href="./images/svg/icons.svg#icon-close-button"></use></svg></button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

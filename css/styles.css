@@ -58,6 +58,38 @@ p {
   gap: 50px;
 }
 
+.pages-list-jr a {
+  color: var(--black);
+  font-weight: 700;
+  transition: color 300ms ease-in-out;
+  letter-spacing: 0.02em;
+}
+
+a:hover, a:focus {
+  color: var(--blue);
+}
+
+.pages-list-jr-active {
+  position: relative;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  word-wrap: break-word;
+  color: var(--blue);
+}
+
+.pages-list .pages-list-jr-active ::after{
+  content: "";
+  display: block;
+  bottom: -32px;
+  border-radius: 2px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: var(--blue);
+  position: absolute;
+}
+
 .contacts-list {
   display: flex;
   margin-left: auto;
@@ -256,6 +288,32 @@ a {
   justify-content: center;
 }
 
+.work-images-jr {
+  position: relative;
+}
+
+.work-images-jr img {
+  display: block;
+}
+
+.work-images-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  word-wrap: break-word;
+}
+
 .team {
   background: var(--white_another);
   text-align: center;
@@ -340,7 +398,7 @@ a.team-social-icons:focus {
 
 .clients {
   text-align: center;
-  padding: 94px;
+  padding: 94px 0;
   margin: 0;
 }
 .title-clients {
@@ -443,7 +501,6 @@ button:focus {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  padding-bottom: 94px;
 }
 
 .project-element {
@@ -457,8 +514,29 @@ button:focus {
   overflow: hidden;
 }
 
+.project-list-image-text-jr {
+  position: absolute;
+    top: 0;
+    left: 0;
+    height: 101%;
+    width: 100%;
+    font-size: 18px;
+    line-height: 1.56;
+    background-color: rgba(33, 150, 243, 0.9);
+    color: #ffffff;
+    padding: 63px 24px;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-list-link:hover .project-list-image-text-jr,
+.project-list-link:focus .project-list-image-text-jr {
+  transform: translateY(0);
+}
+
 .project-list-link {
   display: block;
+  text-decoration: none;
 }
 
 .project-list-link:hover,
@@ -468,12 +546,21 @@ button:focus {
 }
 
 .project-element {
-  display: block;
+  background: var(--white);
+  max-width: 370px;
+  border: 1px solid #eee;
+}
+
+.project-element a {
+  display: inline-block;
+  transition: box-shadow 300ms ease-in-out;
 }
 
 .project-list-element-text {
   padding: 20px;
+  color: var(--black);
 }
+
 .project-list-image {
   width: 100%;
 }
@@ -577,4 +664,57 @@ button:focus {
   a:focus {
     color: var(--blue);
   }
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 528px;
+  min-height: 581px;
+  background-color: var(--white);
+  opacity: 1;
+  border-radius: 4px;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal_button {
+  display: flex;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  align-items: center;
+  border-radius: 50%;
+  background-color: var(--white);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.modal_icon {
+  width: 18px;
+  height: 18px;
+  fill: var(--black);
 }
