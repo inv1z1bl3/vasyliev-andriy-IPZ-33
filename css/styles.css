@@ -529,8 +529,8 @@ button:focus {
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.project-element:hover .project-list-image-text-jr,
-.project-element:focus .project-list-image-text-jr {
+.project-list-link:hover .project-list-image-text-jr,
+.project-list-link:focus .project-list-image-text-jr {
   transform: translateY(0);
 }
 
