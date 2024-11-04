@@ -741,6 +741,7 @@ button:focus {
 
 .modal {
   position: absolute;
+  padding: 40px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -768,14 +769,22 @@ button:focus {
   cursor: pointer;
 }
 
+
 .modal_icon {
   width: 18px;
   height: 18px;
   fill: var(--black);
+  transition: fill 0.5s;
 }
+
+.modal_button:hover .modal_icon, .modal_button:focus .modal_icon {
+  fill: var(--blue);
+}
+
 
 .modal-title {
   color: var(--black);
+  text-align: center;
   font-size: 20px;
   font-weight: 700;
   letter-spacing: 0.03em;
