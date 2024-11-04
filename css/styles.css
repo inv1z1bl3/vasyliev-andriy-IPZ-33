@@ -832,3 +832,81 @@ button:focus {
   left: 12px;
   transition: color 300ms ease-in-out;
 }
+
+.modal-form-textarea {
+  height: 120px;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px #21212133 solid;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  padding: 11px 12px;
+  resize: none;
+}
+
+.modal-checkbox {
+  margin-top: 20px;
+  justify-content: center;
+  display: flex;
+  gap: 9px;
+}
+
+.checkbox-label {
+  cursor: pointer;
+  color: var(--grey);
+}
+
+.modal-span {
+  text-decoration: underline;
+  color: var(--blue);
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  border: var(--black) 1px solid;
+  height: 15px;
+  width: 16px;
+  color: var(--white);
+  border-radius: 2px;
+  transition-duration: 0.5s;
+}
+
+input[type="checkbox"]:checked {
+  background: var(--blue);
+  border: none;
+  color: var(--white);
+}
+
+input[type="checkbox"]:checked::before {
+  content: "✓";
+  margin-left: 3px;
+  display: inline-block;
+  text-align: center;
+}
+
+.checkbox-modal-button-div {
+  display: inline-block;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.checkbox-modal-button {
+  background: var(--blue);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  padding: 10px 52px;
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  transition: background-color 300ms ease-in-out;
+}
+
+.checkbox-modal-button:hover,
+.checkbox-modal-button:focus {
+  background: var(--blue_light);
+}
