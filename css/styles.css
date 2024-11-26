@@ -679,6 +679,61 @@ button:focus {
   z-index: 1;
 }
 
+.subscribe_move {
+  flex-grow: 1;
+}
+
+.subscribe_text {
+  color: var(--white);
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.subscribe_form {
+  display: flex;
+}
+
+.subscribe_label {
+  flex-grow: 1;
+}
+
+.subscribe_input {
+  width: 100%;
+  background: rgba(33, 150, 243, 0);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 1px rgba(255, 255, 255, 0.3) solid;
+  padding: 16px 16px 16px 16px;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.subscribe_button {
+    background-color: var(--blue);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    padding: 10px 28px;
+    margin-left: 12px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    transition: background-color 300ms ease-in-out;
+}
+
+.subscribe_button_svg {
+  margin-left: 10px;
+  fill: currentColor;
+}
+
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
@@ -686,6 +741,7 @@ button:focus {
 
 .modal {
   position: absolute;
+  padding: 40px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -713,8 +769,153 @@ button:focus {
   cursor: pointer;
 }
 
+
 .modal_icon {
   width: 18px;
   height: 18px;
   fill: var(--black);
+  transition: fill 0.5s;
+}
+
+.modal_button:hover .modal_icon, .modal_button:focus .modal_icon {
+  fill: var(--blue);
+}
+
+
+.modal-title {
+  color: var(--black);
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  margin-bottom: 12px;
+}
+
+.modal-form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.modal-label-form {
+  color: var(--grey);
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  position: relative;
+}
+
+.modal-label-form:not(:first-child) {
+  margin-top: 10px;
+}
+
+.modal-label-text {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.modal-input-form {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  border: 1px #21212133 solid;
+  padding: 11px 0px 11px 30px;
+  transition: outline-color 300ms ease-in-out;
+}
+
+.modal-input-form:focus + .modal-form-icon,
+.modal-input-form:hover + .modal-form-icon {
+  color: var(--blue);
+}
+.modal-input-form:hover,
+.modal-input-form:focus,
+.modal-form-textarea:hover,
+.modal-form-textarea:focus {
+  outline: 1px var(--blue) solid;
+}
+
+.modal-form-icon {
+  position: absolute;
+  color: var(--black);
+  bottom: 11px;
+  left: 12px;
+  transition: color 300ms ease-in-out;
+}
+
+.modal-form-textarea {
+  height: 120px;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px #21212133 solid;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  padding: 11px 12px;
+  resize: none;
+}
+
+.modal-checkbox {
+  margin-top: 20px;
+  justify-content: center;
+  display: flex;
+  gap: 9px;
+}
+
+.checkbox-label {
+  cursor: pointer;
+  color: var(--grey);
+}
+
+.modal-span {
+  text-decoration: underline;
+  color: var(--blue);
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  border: var(--black) 1px solid;
+  height: 15px;
+  width: 16px;
+  color: var(--white);
+  border-radius: 2px;
+  transition-duration: 0.5s;
+}
+
+input[type="checkbox"]:checked {
+  background: var(--blue);
+  border: none;
+  color: var(--white);
+}
+
+input[type="checkbox"]:checked::before {
+  content: "✓";
+  margin-left: 3px;
+  display: inline-block;
+  text-align: center;
+}
+
+.checkbox-modal-button-div {
+  display: inline-block;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.checkbox-modal-button {
+  background: var(--blue);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  padding: 10px 52px;
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  transition: background-color 300ms ease-in-out;
+}
+
+.checkbox-modal-button:hover,
+.checkbox-modal-button:focus {
+  background: var(--blue_light);
 }
