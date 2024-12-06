@@ -1,0 +1,28 @@
+.header {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ececec;
+
+    .container {
+        display: flex;
+        align-items: center;
+    }
+
+    nav {
+        margin-left: 93px;
+    }
+
+    .pages-list {
+        display: flex;
+        gap: 50px;
+    
+    &-link a {
+        
+    }
+    }
+}
+&:hover,
+        &:focus {
+            
+        }
